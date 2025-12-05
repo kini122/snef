@@ -145,6 +145,13 @@ export default function CoursesPage() {
                       ))}
                     </ul>
                   </div>
+                  {operation.link && (
+                    <div className="mt-4 pt-4 border-t border-gray-100">
+                      <a href={operation.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm font-semibold underline">
+                        Visit Website →
+                      </a>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             )
