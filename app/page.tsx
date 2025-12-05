@@ -257,8 +257,8 @@ export default function CaptainsBridge() {
               <TypingHeroTitle
                 texts={[
                   "Welcome to CAPTAINS BRIDGE",
-                  "Top rated maritime training center",
-                  "we train future marine engineers",
+                  "Top rated skill training center",
+                  "we train future technical engineers",
                 ]}
                 displayDuration={3000}
                 typingSpeed={50}
