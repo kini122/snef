@@ -155,13 +155,7 @@ export default function CoursesPage() {
                 </CardContent>
               </Card>
             )
-            return operation.link ? (
-              <a key={i} href={operation.link} target="_blank" rel="noopener noreferrer" className="no-underline">
-                {cardElement}
-              </a>
-            ) : (
-              <div key={i}>{cardElement}</div>
-            )
+            return <div key={i}>{cardElement}</div>
           })}
         </div>
 
