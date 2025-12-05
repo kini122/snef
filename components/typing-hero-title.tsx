@@ -12,8 +12,8 @@ interface TypingHeroTitleProps {
 export default function TypingHeroTitle({
   texts = [
     "Welcome to SNEF INDIA",
-    "Top rated maritime training center",
-    "we train future marine engineers",
+    "Top rated skill training center",
+    "we train future technical engineers",
   ],
   className = "hero-title animate-in fade-in slide-in-from-bottom duration-1000",
   typingSpeed = 50,

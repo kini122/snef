@@ -73,7 +73,7 @@ function ContactClient() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="flex-shrink-0 text-primary-cyan" />
-              <span>+91 484 2234500 &nbsp; / &nbsp; +91 8484545501</span>
+              <span>+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="flex-shrink-0 text-primary-cyan" />

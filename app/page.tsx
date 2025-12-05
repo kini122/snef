@@ -257,8 +257,8 @@ export default function CaptainsBridge() {
               <TypingHeroTitle
                 texts={[
                   "Welcome to CAPTAINS BRIDGE",
-                  "Top rated maritime training center",
-                  "we train future marine engineers",
+                  "Top rated skill training center",
+                  "we train future technical engineers",
                 ]}
                 displayDuration={3000}
                 typingSpeed={50}
@@ -388,7 +388,7 @@ export default function CaptainsBridge() {
           <AnimatedSection>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
-                Captains Bridge Facilities
+                CAPTAINS BRIDGE FACILITATIONS
               </h2>
               <div className="w-16 h-px mx-auto mb-10 divider-gold" />
               <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-medium body-premium">

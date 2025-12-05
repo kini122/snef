@@ -278,7 +278,7 @@ export default function ValueAddedCoursesPage() {
       <div className="relative w-full overflow-hidden bg-center bg-cover" style={{ backgroundImage: "url('https://images.pexels.com/photos/33689/ship-boat-lake-garda-italy.jpg')", minHeight: "420px", display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
         <div className="h-[260px] w-full md:h-[360px] grid place-items-center relative z-10">
           <h1 className="text-center text-5xl font-black md:text-6xl leading-tight heading-premium text-white">
-            Value Added Courses
+            NON DG - NON OPITO COURSES
           </h1>
         </div>
       </div>

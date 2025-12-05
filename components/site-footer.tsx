@@ -48,7 +48,7 @@ export default function SiteFooter() {
               </li>
               <li className="flex items-center gap-3 hover:text-gray-900 transition-colors duration-200">
                 <Phone size={16} className="text-primary-cyan" />
-                <a href="tel:+914842234500">+91 484 2234500</a>
+                <span>+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</span>
               </li>
               <li className="flex items-center gap-3 hover:text-gray-900 transition-colors duration-200">
                 <Mail size={16} className="text-primary-cyan" />

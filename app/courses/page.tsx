@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import ParallaxImage from "@/components/parallax-image"
-import { Ship, Package, Anchor } from "lucide-react"
+import { Ship, Package, Anchor, Code } from "lucide-react"
 
 const operations = [
   {
@@ -52,16 +52,29 @@ const operations = [
     ],
     image: "https://images.pexels.com/photos/7019310/pexels-photo-7019310.jpeg",
   },
+  {
+    category: "Technology & IT Partners",
+    icon: Code,
+    overview: "Digital upskilling, intelligent automation, and analytical business insights designed to modernize operations and empower organizations through technology-driven solutions.",
+    benefits: ["Enhanced technical capability", "Data-driven decision-making", "Streamlined automated workflows"],
+    items: [
+      "Technical Courses & Skill Development",
+      "Business Reporting & Analytics",
+      "Business Process Automation",
+    ],
+    image: "https://images.pexels.com/photos/9159053/pexels-photo-9159053.jpeg",
+    link: "https://tech.kozker.com/",
+  },
 ]
 
 export default function CoursesPage() {
   return (
     <div className="bg-page-white">
       <div className="relative w-full overflow-hidden bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F84749e18bca64bd7a57af62d04439b13%2F15aff742c7404b1eb1508baa387ebaa3)", minHeight: "420px", backgroundRepeat: "no-repeat", display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
-        <div className="h-[260px] w-full md:h-[360px] grid place-items-center relative z-10">
-          <h1 className="text-center text-5xl font-black md:text-6xl leading-tight heading-premium" style={{ color: "rgba(0, 0, 0, 1)" }}>
-            GROUP SHIPPING SERVICES
-          </h1>
+        <div className="h-[296px] w-full grid place-items-center relative z-10">
+        </div>
+        <div style={{ color: "rgb(0, 0, 0)", fontSize: "60px", fontWeight: "700", letterSpacing: "0.8px", lineHeight: "66px", marginBottom: "30px", textAlign: "center", textTransform: "uppercase" }}>
+          GROUP SHIPPING SERVICES
         </div>
       </div>
 
@@ -86,8 +99,8 @@ export default function CoursesPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {operations.map((operation, i) => {
             const IconComponent = operation.icon
-            return (
-              <Card key={i} className="overflow-hidden border-0 shadow-md transition hover:-translate-y-2 hover:shadow-xl group h-full flex flex-col" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+            const cardElement = (
+              <Card className="overflow-hidden border-0 shadow-md transition hover:-translate-y-2 hover:shadow-xl group h-full flex flex-col" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                 <div className="h-40 w-full overflow-hidden">
                   <ParallaxImage src={operation.image} alt={operation.category} className="h-full w-full" intensity={0.12} zoom={0.06} />
                 </div>
@@ -132,9 +145,17 @@ export default function CoursesPage() {
                       ))}
                     </ul>
                   </div>
+                  {operation.link && (
+                    <div className="mt-4 pt-4 border-t border-gray-100">
+                      <a href={operation.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm font-semibold underline">
+                        Visit Website →
+                      </a>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             )
+            return <div key={i}>{cardElement}</div>
           })}
         </div>
 
