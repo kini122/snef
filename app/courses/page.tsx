@@ -58,10 +58,10 @@ export default function CoursesPage() {
   return (
     <div className="bg-page-white">
       <div className="relative w-full overflow-hidden bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F84749e18bca64bd7a57af62d04439b13%2F15aff742c7404b1eb1508baa387ebaa3)", minHeight: "420px", backgroundRepeat: "no-repeat", display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
-        <div className="h-[260px] w-full md:h-[360px] grid place-items-center relative z-10">
-          <h1 className="text-center text-5xl font-black md:text-6xl leading-tight heading-premium" style={{ color: "rgba(0, 0, 0, 1)" }}>
-            GROUP SHIPPING SERVICES
-          </h1>
+        <div className="h-[296px] w-full grid place-items-center relative z-10">
+        </div>
+        <div style={{ color: "rgb(0, 0, 0)", fontSize: "60px", fontWeight: "700", letterSpacing: "0.8px", lineHeight: "66px", marginBottom: "30px", textAlign: "center", textTransform: "uppercase" }}>
+          GROUP SHIPPING SERVICES
         </div>
       </div>
 
