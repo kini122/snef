@@ -39,51 +39,114 @@ function RevealImageListItem({ text, images }: ShowImageListItemProps) {
 }
 
 export function RevealImageList({ className }: { className?: string }) {
-  // New comprehensive text about maritime business operations offerings - all caps
+  // Maritime services and offerings - all caps
   const paragraph =
-    "MARITIME BUSINESS DIVERSIFICATION, CARGO SEGMENTS, GLOBAL PLACEMENT OPPORTUNITIES, SHORE-BASED OPERATIONS, EXPERT FACULTY, AND INDUSTRY-RECOGNIZED ACCREDITATION."
+    "MARITIME BUSINESS DIVERSIFICATION, MARITIME PORT AND SHIPPING LOGISTICS RELATED SERVICES, LEGAL TECHNICAL AND COMPLIANCE SERVICES, CREW MANAGEMENT CREW MANNING AND TRAINING, CARGO SEGMENTS, CARGO HANDLING, SHORE-BASED OPERATIONS, BERTH MANAGEMENT, VALUE-ADDED MARITIME AND PORT SERVICES, INSURANCE HULL CARGO AND P&I COVERAGE, HULL & MACHINERY (H&M), SHIP SURVEY AS PER PORT STATE / FLAG STATE, SHIP CHARTERING AND BROKERAGE, LIGHT VESSELS, AND BUILDING DOCKING REPAIR AND MAINTENANCE."
 
   const items: ShowImageListItemProps[] = [
     {
       text: "MARITIME BUSINESS DIVERSIFICATION",
       images: [
-        { src: "/images/certification-hero.jpg", alt: "Maritime business diversification" },
-        { src: "https://images.pexels.com/photos/31642540/pexels-photo-31642540.jpeg", alt: "Maritime business diversification" },
+        { src: "https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg", alt: "Maritime business diversification container ship" },
+        { src: "https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg", alt: "Container ship loading operations" },
+      ],
+    },
+    {
+      text: "MARITIME, PORT AND SHIPPING LOGISTICS RELATED SERVICES",
+      images: [
+        { src: "https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg", alt: "Maritime port shipping logistics" },
+        { src: "https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg", alt: "Cargo ship at port terminal" },
+      ],
+    },
+    {
+      text: "LEGAL, TECHNICAL AND COMPLIANCE SERVICES",
+      images: [
+        { src: "https://images.pexels.com/photos/7841841/pexels-photo-7841841.jpeg", alt: "Legal technical compliance documents" },
+        { src: "https://images.pexels.com/photos/7841841/pexels-photo-7841841.jpeg", alt: "Maritime compliance agreements" },
+      ],
+    },
+    {
+      text: "CREW MANAGEMENT, CREW MANNING AND TRAINING",
+      images: [
+        { src: "https://images.pexels.com/photos/5416489/pexels-photo-5416489.jpeg", alt: "Crew maritime training teamwork" },
+        { src: "https://images.pexels.com/photos/5416489/pexels-photo-5416489.jpeg", alt: "Sailors on vessel training" },
       ],
     },
     {
       text: "CARGO SEGMENTS",
       images: [
-        { src: "/images/courses-hero.jpg", alt: "Cargo segments and handling" },
-        { src: "https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg", alt: "Cargo segments" },
+        { src: "https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg", alt: "Cargo containers segments" },
+        { src: "https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg", alt: "Cargo ship container operations" },
       ],
     },
     {
-      text: "GLOBAL PLACEMENT OPPORTUNITIES",
+      text: "CARGO HANDLING",
       images: [
-        { src: "/maritime-professionals-discussing-partnership.jpg", alt: "Global placement network" },
-        { src: "/person-signing-maritime-certification-documents.jpg", alt: "Global placement opportunities" },
+        { src: "https://images.pexels.com/photos/6169661/pexels-photo-6169661.jpeg", alt: "Cargo handling loading operations" },
+        { src: "https://images.pexels.com/photos/6169661/pexels-photo-6169661.jpeg", alt: "Loading cargo boxes" },
       ],
     },
     {
       text: "SHORE-BASED OPERATIONS",
       images: [
-        { src: "/advanced-computer-lab-with-maritime-simulation.jpg", alt: "Shore-based maritime operations" },
-        { src: "https://images.pexels.com/photos/7019310/pexels-photo-7019310.jpeg", alt: "Shore-based operations" },
+        { src: "https://images.pexels.com/photos/126624/pexels-photo-126624.jpeg", alt: "Shore based maritime operations professionals" },
+        { src: "https://images.pexels.com/photos/126624/pexels-photo-126624.jpeg", alt: "Maritime professionals training" },
       ],
     },
     {
-      text: "EXPERT FACULTY",
+      text: "BERTH MANAGEMENT",
       images: [
-        { src: "/maritime-training-session.jpg", alt: "Expert maritime faculty teaching" },
-        { src: "/group-of-maritime-students-in-uniform.jpg", alt: "Expert faculty team" },
+        { src: "https://images.pexels.com/photos/28772403/pexels-photo-28772403.jpeg", alt: "Port berth management terminal" },
+        { src: "https://images.pexels.com/photos/28772403/pexels-photo-28772403.jpeg", alt: "Container ship berth terminal" },
       ],
     },
     {
-      text: "INDUSTRY-RECOGNIZED ACCREDITATION",
+      text: "VALUE-ADDED MARITIME AND PORT SERVICES",
       images: [
-        { src: "/maritime-certificates.jpg", alt: "Industry certification and accreditation" },
-        { src: "https://images.pexels.com/photos/11035385/pexels-photo-11035385.jpeg", alt: "Industry accreditation standards" },
+        { src: "https://images.pexels.com/photos/18590757/pexels-photo-18590757.jpeg", alt: "Value added port maritime services" },
+        { src: "https://images.pexels.com/photos/18590757/pexels-photo-18590757.jpeg", alt: "Maritime vessel port services" },
+      ],
+    },
+    {
+      text: "INSURANCE: HULL, CARGO, AND P&I COVERAGE",
+      images: [
+        { src: "https://images.pexels.com/photos/18538834/pexels-photo-18538834.jpeg", alt: "Maritime insurance hull cargo coverage" },
+        { src: "https://images.pexels.com/photos/18538834/pexels-photo-18538834.jpeg", alt: "Offshore maritime insurance" },
+      ],
+    },
+    {
+      text: "HULL & MACHINERY (H&M)",
+      images: [
+        { src: "https://images.pexels.com/photos/34922816/pexels-photo-34922816.jpeg", alt: "Ship hull machinery inspection" },
+        { src: "https://images.pexels.com/photos/34922816/pexels-photo-34922816.jpeg", alt: "Maritime hull machinery" },
+      ],
+    },
+    {
+      text: "SHIP SURVEY AS PER PORT STATE / FLAG STATE",
+      images: [
+        { src: "https://images.pexels.com/photos/31148241/pexels-photo-31148241.jpeg", alt: "Ship survey port state inspection" },
+        { src: "https://images.pexels.com/photos/31148241/pexels-photo-31148241.jpeg", alt: "Naval dock ship inspection" },
+      ],
+    },
+    {
+      text: "SHIP CHARTERING AND BROKERAGE",
+      images: [
+        { src: "https://images.pexels.com/photos/3338019/pexels-photo-3338019.jpeg", alt: "Ship chartering brokerage operations" },
+        { src: "https://images.pexels.com/photos/3338019/pexels-photo-3338019.jpeg", alt: "Port cargo operations chartering" },
+      ],
+    },
+    {
+      text: "LIGHT VESSELS",
+      images: [
+        { src: "https://images.pexels.com/photos/35010605/pexels-photo-35010605.jpeg", alt: "Light vessel maritime navigation" },
+        { src: "https://images.pexels.com/photos/35010605/pexels-photo-35010605.jpeg", alt: "Light vessel at sea" },
+      ],
+    },
+    {
+      text: "BUILDING, DOCKING, REPAIR AND MAINTENANCE",
+      images: [
+        { src: "https://images.pexels.com/photos/3819524/pexels-photo-3819524.jpeg", alt: "Ship repair docking maintenance" },
+        { src: "https://images.pexels.com/photos/3819524/pexels-photo-3819524.jpeg", alt: "Maritime vessel maintenance repair" },
       ],
     },
   ]
