@@ -99,8 +99,8 @@ export default function CoursesPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {operations.map((operation, i) => {
             const IconComponent = operation.icon
-            return (
-              <Card key={i} className="overflow-hidden border-0 shadow-md transition hover:-translate-y-2 hover:shadow-xl group h-full flex flex-col" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+            const cardElement = (
+              <Card className="overflow-hidden border-0 shadow-md transition hover:-translate-y-2 hover:shadow-xl group h-full flex flex-col" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                 <div className="h-40 w-full overflow-hidden">
                   <ParallaxImage src={operation.image} alt={operation.category} className="h-full w-full" intensity={0.12} zoom={0.06} />
                 </div>
@@ -147,6 +147,13 @@ export default function CoursesPage() {
                   </div>
                 </CardContent>
               </Card>
+            )
+            return operation.link ? (
+              <a key={i} href={operation.link} target="_blank" rel="noopener noreferrer" className="no-underline">
+                {cardElement}
+              </a>
+            ) : (
+              <div key={i}>{cardElement}</div>
             )
           })}
         </div>
