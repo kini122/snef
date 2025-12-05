@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import ParallaxImage from "@/components/parallax-image"
-import { Ship, Package, Anchor } from "lucide-react"
+import { Ship, Package, Anchor, Code } from "lucide-react"
 
 const operations = [
   {
@@ -51,6 +51,19 @@ const operations = [
       "Technical Assistance",
     ],
     image: "https://images.pexels.com/photos/7019310/pexels-photo-7019310.jpeg",
+  },
+  {
+    category: "Technology & IT Partners",
+    icon: Code,
+    overview: "Digital upskilling, intelligent automation, and analytical business insights designed to modernize operations and empower organizations through technology-driven solutions.",
+    benefits: ["Enhanced technical capability", "Data-driven decision-making", "Streamlined automated workflows"],
+    items: [
+      "Technical Courses & Skill Development",
+      "Business Reporting & Analytics",
+      "Business Process Automation",
+    ],
+    image: "https://images.pexels.com/photos/9159053/pexels-photo-9159053.jpeg",
+    link: "https://tech.kozker.com/",
   },
 ]
 
