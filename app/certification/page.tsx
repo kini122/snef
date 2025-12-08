@@ -22,19 +22,27 @@ const offerings = [
 const testimonials = [
   {
     name: "T. Kishore Kumar",
-    role: "Deck Cadet",
-    course: "BSP (Basic Seafarers Package)",
-    year: "2024",
-    photo: "/professional-maritime-officer-portrait.jpg",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F353d96c8280a4e15a147cc57ec4f59d6?format=webp&width=800",
     quote: "I'm very happy to join this institute. The institute has all the facilities required as per the norms of DG Shipping...",
   },
   {
-    name: "Rahul Menon",
-    role: "Engine Officer",
-    course: "Marine Engineering Bridging",
-    year: "2023",
-    photo: "/male-officer.jpg",
-    quote: "Experienced faculty and practical training helped me excel at sea...",
+    name: "Muhammed Arshad",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Ff9c772aaa6bf48ad8ef0291fd1cab26b?format=webp&width=800",
+    quote: "Excellent maritime training institute in Kerala.",
+  },
+  {
+    name: "Justin Antony",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Febb82e357ae74b00a0aeb7cda3f5709e?format=webp&width=800",
+    quote: "The institute has excellent facilities, Excellent faculty and all the facilities.",
   },
 ]
 
