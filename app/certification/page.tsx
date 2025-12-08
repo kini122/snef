@@ -93,6 +93,9 @@ export default function CertificationPage() {
             <h2 className="text-3xl font-black md:text-4xl mb-2 leading-tight heading-premium text-primary-cyan">
               Our Certifications, Accreditations and Consultancy
             </h2>
+            <h3 className="text-2xl font-semibold mb-6 heading-premium text-primary-cyan">
+              Internationally Recognized Maritime Certifications
+            </h3>
             <p className="text-base leading-relaxed md:text-lg body-premium text-dark-secondary">
               Recognized by leading educational and maritime institutions worldwide
             </p>
@@ -104,7 +107,7 @@ export default function CertificationPage() {
                 <div className="h-32 w-full mb-4 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden">
                   <img
                     src={cert.image}
-                    alt={cert.title}
+                    alt={`${cert.title} - Maritime certification and accreditation`}
                     className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
