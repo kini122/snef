@@ -12,7 +12,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CAPTAINS BRIDGE - Maritime Training Institute in Kochi | Merchant Navy Courses",
+  title: "CAPTAINS BRIDGE - PORTS",
   description:
     "Premier maritime training institute in Kochi offering merchant navy certification courses, BOSIET, HUET, H2S, and placement assistance. DG Shipping approved training center.",
   keywords: "maritime training, merchant navy courses, BOSIET, H2S training, maritime academy Kochi, shipping courses, seafarer training",
