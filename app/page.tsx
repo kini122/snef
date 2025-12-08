@@ -247,37 +247,6 @@ export default function CaptainsBridge() {
     setMobileMenuOpen(false)
   }
 
-  // FAQ schema for rich snippets
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What maritime courses does CAPTAINS BRIDGE offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer comprehensive maritime training including BOSIET, HUET, H2S Awareness training, cookery courses, and specialized value-added programs approved by DG Shipping and the Government of India."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is CAPTAINS BRIDGE DG Shipping approved?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, CAPTAINS BRIDGE is a DG Shipping approved maritime training institute located in Kochi, Kerala. All our courses comply with international maritime standards and STCW requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide placement assistance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we provide 100% placement support through our dedicated Placement Guidance Cell. We connect our trained seafarers with shipping companies and maritime organizations globally."
-        }
-      }
-    ]
-  }
 
   return (
     <div className="min-h-screen bg-page-white">
