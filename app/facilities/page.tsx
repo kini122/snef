@@ -1,17 +1,7 @@
-import type { Metadata } from "next"
+"use client"
+
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-
-export const metadata: Metadata = {
-  title: "World-Class Training Facilities - CAPTAINS BRIDGE Maritime Institute",
-  description: "State-of-the-art maritime training facilities including spacious classrooms, advanced computer labs, simulator training, food safety facilities, and modern accommodation.",
-  keywords: "maritime training facilities, computer lab, simulator training, maritime institute infrastructure, seafarer training center, modern maritime academy",
-  openGraph: {
-    title: "Training Facilities - CAPTAINS BRIDGE",
-    description: "World-class maritime training infrastructure designed for professional development of merchant navy officers.",
-    url: "https://captainsbridge.com/facilities",
-  },
-}
 import DetailDialog, { type DetailDialogData } from "@/components/detail-dialog"
 import ParallaxImage from "@/components/parallax-image"
 

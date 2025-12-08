@@ -1,17 +1,7 @@
-import type { Metadata } from "next"
+"use client"
+
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-
-export const metadata: Metadata = {
-  title: "Value-Added Maritime Courses - CAPTAINS BRIDGE",
-  description: "Advanced value-added courses for maritime professionals including H2S, HUET, BOSIET, and specialized safety training. Enhance your maritime career credentials.",
-  keywords: "H2S training, HUET course, BOSIET training, value-added maritime courses, offshore safety training, maritime certification courses",
-  openGraph: {
-    title: "Value-Added Maritime Courses",
-    description: "Specialized training programs designed to advance maritime professionals' careers with industry-recognized certifications.",
-    url: "https://captainsbridge.com/value-added-courses",
-  },
-}
 import DetailDialog, { type DetailDialogData } from "@/components/detail-dialog"
 import ParallaxImage from "@/components/parallax-image"
 

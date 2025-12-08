@@ -1,17 +1,7 @@
-import type { Metadata } from "next"
+"use client"
+
 import { Suspense, useState } from "react"
 import { Input } from "@/components/ui/input"
-
-export const metadata: Metadata = {
-  title: "Contact CAPTAINS BRIDGE - Maritime Training Institute Kochi",
-  description: "Get in touch with CAPTAINS BRIDGE maritime training center in Kochi. Phone: +91 6238730195, Email: snefindiaglobal@gmail.com. Located in Aditya Complex, Thoppumpady.",
-  keywords: "contact maritime academy, CAPTAINS BRIDGE Kochi, maritime training contact, shipping institute Kochi, maritime course inquiry",
-  openGraph: {
-    title: "Contact CAPTAINS BRIDGE",
-    description: "Reach out to our maritime training experts for course inquiries and enrollment assistance.",
-    url: "https://captainsbridge.com/contact",
-  },
-}
 import { Textarea } from "@/components/ui/textarea"
 import { Select } from "@/components/ui/select"
 import { Mail, MapPin, Phone } from "lucide-react"

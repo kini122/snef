@@ -1,17 +1,7 @@
-import type { Metadata } from "next"
+"use client"
+
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
-
-export const metadata: Metadata = {
-  title: "Apply for Maritime Courses - CAPTAINS BRIDGE",
-  description: "Join CAPTAINS BRIDGE maritime training programs. Simple online application for merchant navy courses, DG Shipping certifications, and shipping education.",
-  keywords: "maritime course application, merchant navy enrollment, shipping academy apply, maritime training registration, seafarer course admission",
-  openGraph: {
-    title: "Apply for Maritime Training",
-    description: "Begin your maritime career with CAPTAINS BRIDGE. Quick and easy online course application.",
-    url: "https://captainsbridge.com/apply",
-  },
-}
 import { Textarea } from "@/components/ui/textarea"
 import { Select } from "@/components/ui/select"
 import { courseTitles } from "@/lib/courses"
