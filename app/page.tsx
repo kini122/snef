@@ -375,7 +375,7 @@ export default function CaptainsBridge() {
               <AnimatedSection key={index} delay={index * 100}>
                 <Card className="group hover:shadow-md transition-shadow duration-300 border-0 overflow-hidden h-full card-minimal" style={{ backgroundColor: 'rgb(245, 243, 239)' }}>
                   <div className="relative h-48 overflow-hidden">
-                    <ParallaxImage src={item.image || "/placeholder.svg"} alt={item.title} className="w-full h-full" intensity={0.12} zoom={0.08} />
+                    <ParallaxImage src={item.image || "/placeholder.svg"} alt={`${item.title} - Maritime training service`} className="w-full h-full" intensity={0.12} zoom={0.08} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-6">
                       <div className="p-3 rounded-full text-white icon-circle-cyan">
                         <item.icon className="w-8 h-8" />
@@ -442,7 +442,7 @@ export default function CaptainsBridge() {
               <AnimatedSection key={index} delay={index * 100}>
                 <Card className="group hover:shadow-md transition-shadow duration-300 border-0 overflow-hidden h-full flex flex-col card-minimal" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                   <div className="relative h-56 overflow-hidden">
-                    <ParallaxImage src={course.image || "/placeholder.svg"} alt={course.title} className="w-full h-full" intensity={0.12} zoom={0.08} />
+                    <ParallaxImage src={course.image || "/placeholder.svg"} alt={`${course.title} - Maritime training program`} className="w-full h-full" intensity={0.12} zoom={0.08} />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-all duration-300"></div>
                   </div>
                   <CardContent className="p-8 flex-grow flex flex-col min-h-[160px]">
