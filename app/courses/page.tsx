@@ -1,16 +1,6 @@
-import type { Metadata } from "next"
-import { Card, CardContent } from "@/components/ui/card"
+"use client"
 
-export const metadata: Metadata = {
-  title: "Maritime Courses & Training Programs - CAPTAINS BRIDGE Kochi",
-  description: "Comprehensive maritime training courses including BOSIET, H2S, HUET, cookery, and specialized seafarer certification. Approved by DG Shipping and government of India.",
-  keywords: "maritime courses, seafarer training, BOSIET course, H2S training, HUET, merchant navy education, maritime certification, shipping courses Kochi",
-  openGraph: {
-    title: "Maritime Training Courses - CAPTAINS BRIDGE",
-    description: "Explore our comprehensive range of maritime and shipping courses approved by international maritime authorities.",
-    url: "https://captainsbridge.com/courses",
-  },
-}
+import { Card, CardContent } from "@/components/ui/card"
 import ParallaxImage from "@/components/parallax-image"
 import { Ship, Package, Anchor, Code } from "lucide-react"
 
