@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-import type { Metadata } from "next"
 
 import { useEffect, useRef, useState } from "react"
 import * as Dialog from "@radix-ui/react-dialog"
