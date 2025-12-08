@@ -167,9 +167,9 @@ export default function CertificationPage() {
                         <div className="flex-1">
                           <blockquote className="text-balance italic leading-relaxed text-white">"{t.quote}"</blockquote>
                           <div className="mt-3 text-sm font-semibold text-white">
-                            {t.name} <span className="opacity-80 font-normal">— {t.role}</span>
+                            {t.name} {t.role && <span className="opacity-80 font-normal">— {t.role}</span>}
                           </div>
-                          <div className="text-xs text-white/80 mt-1">{t.course} • {t.year}</div>
+                          {(t.course || t.year) && <div className="text-xs text-white/80 mt-1">{t.course} {t.course && t.year && "•"} {t.year}</div>}
                         </div>
                       </div>
                     </div>
