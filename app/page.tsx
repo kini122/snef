@@ -714,7 +714,7 @@ export default function CaptainsBridge() {
                       <br />
                       Next to Anjali Marriage hall,
                       <br />
-                      Thoppumpady, Kochi, Kerala - 682005
+                      Thoppumpady, Kochi 682005
                     </p>
                   </div>
                 </div>
@@ -727,8 +727,7 @@ export default function CaptainsBridge() {
                     <h3 className="font-bold mb-3 uppercase text-base heading-premium text-accent-gold">
                       Phone
                     </h3>
-                    <p className="text-sm text-dark-secondary">Call: +91 484 2234500</p>
-                    <p className="text-sm text-dark-secondary">Mobile: +91 8484545501</p>
+                    <p className="text-sm text-dark-secondary">+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</p>
                   </div>
                 </div>
 
@@ -740,7 +739,7 @@ export default function CaptainsBridge() {
                     <h3 className="font-bold mb-3 uppercase text-base heading-premium text-accent-gold">
                       Email
                     </h3>
-                    <p className="text-sm text-dark-secondary">cochinmaritime@gmail.com</p>
+                    <p className="text-sm text-dark-secondary">snefindiaglobal@gmail.com</p>
                   </div>
                 </div>
 
