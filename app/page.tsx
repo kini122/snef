@@ -247,22 +247,61 @@ export default function CaptainsBridge() {
     setMobileMenuOpen(false)
   }
 
+  // FAQ schema for rich snippets
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What maritime courses does CAPTAINS BRIDGE offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer comprehensive maritime training including BOSIET, HUET, H2S Awareness training, cookery courses, and specialized value-added programs approved by DG Shipping and the Government of India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is CAPTAINS BRIDGE DG Shipping approved?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, CAPTAINS BRIDGE is a DG Shipping approved maritime training institute located in Kochi, Kerala. All our courses comply with international maritime standards and STCW requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide placement assistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide 100% placement support through our dedicated Placement Guidance Cell. We connect our trained seafarers with shipping companies and maritime organizations globally."
+        }
+      }
+    ]
+  }
+
   return (
     <div className="min-h-screen bg-page-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero Section */}
       <section id="home" className="relative min-h-[90vh] flex items-center bg-page-white">
         <YouTubeHeroBackground videoSrc="https://cdn.builder.io/o/assets%2F9aed9e355eef433f905fdc33685caf52%2Fbf936fb889cb44438b1217b5daa6a76d?alt=media&token=d97ab75b-fbac-4318-ba19-2275c16c1484&apiKey=9aed9e355eef433f905fdc33685caf52" overlayOpacity={0.2} heightClass="min-h-[90vh]">
           <div className="hero-inner mx-auto max-w-[1320px] px-20 pt-20 pb-[21px] flex flex-col items-center lg:items-start justify-center relative min-h-[90vh]">
             <div className="max-w-3xl">
-              <TypingHeroTitle
-                texts={[
-                  "Welcome to CAPTAINS BRIDGE",
-                  "Top rated skill training center",
-                  "we train future technical engineers",
-                ]}
-                displayDuration={3000}
-                typingSpeed={50}
-              />
+              <div>
+                <h1 className="sr-only">CAPTAINS BRIDGE - Maritime Training Institute</h1>
+                <TypingHeroTitle
+                  texts={[
+                    "Welcome to CAPTAINS BRIDGE",
+                    "Top rated skill training center",
+                    "we train future technical engineers",
+                  ]}
+                  displayDuration={3000}
+                  typingSpeed={50}
+                />
+              </div>
               <div className="hero-cta mt-6 flex flex-col sm:flex-row gap-8 animate-in slide-in-from-bottom duration-800 delay-300">
                 <button
                   className="px-10 py-4 text-lg font-bold uppercase transition-all duration-300 rounded btn-primary"
@@ -312,6 +351,9 @@ export default function CaptainsBridge() {
               <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
                 Welcome to CAPTAINS BRIDGE
               </h2>
+              <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed body-premium text-dark-secondary mb-8">
+                Premier maritime training institute offering comprehensive merchant navy courses, DG Shipping approved certifications, and professional development for aspiring seafarers.
+              </p>
               <div className="w-16 h-px mx-auto divider-gold" />
             </div>
           </AnimatedSection>
@@ -357,7 +399,7 @@ export default function CaptainsBridge() {
               <AnimatedSection key={index} delay={index * 100}>
                 <Card className="group hover:shadow-md transition-shadow duration-300 border-0 overflow-hidden h-full card-minimal" style={{ backgroundColor: 'rgb(245, 243, 239)' }}>
                   <div className="relative h-48 overflow-hidden">
-                    <ParallaxImage src={item.image || "/placeholder.svg"} alt={item.title} className="w-full h-full" intensity={0.12} zoom={0.08} />
+                    <ParallaxImage src={item.image || "/placeholder.svg"} alt={`${item.title} - Maritime training service`} className="w-full h-full" intensity={0.12} zoom={0.08} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-6">
                       <div className="p-3 rounded-full text-white icon-circle-cyan">
                         <item.icon className="w-8 h-8" />
@@ -388,8 +430,11 @@ export default function CaptainsBridge() {
           <AnimatedSection>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
-                CAPTAINS BRIDGE FACILITATIONS
+                CAPTAINS BRIDGE Training Programs
               </h2>
+              <h3 className="text-2xl md:text-3xl font-semibold mb-6 heading-premium text-primary-cyan">
+                Comprehensive Maritime Certification Courses
+              </h3>
               <div className="w-16 h-px mx-auto mb-10 divider-gold" />
               <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-medium body-premium">
                 Our offerings are wide-ranging and all-inclusive. We are adept in making available optimal solutions for residential, commercial and industrial verticals.
@@ -421,7 +466,7 @@ export default function CaptainsBridge() {
               <AnimatedSection key={index} delay={index * 100}>
                 <Card className="group hover:shadow-md transition-shadow duration-300 border-0 overflow-hidden h-full flex flex-col card-minimal" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                   <div className="relative h-56 overflow-hidden">
-                    <ParallaxImage src={course.image || "/placeholder.svg"} alt={course.title} className="w-full h-full" intensity={0.12} zoom={0.08} />
+                    <ParallaxImage src={course.image || "/placeholder.svg"} alt={`${course.title} - Maritime training program`} className="w-full h-full" intensity={0.12} zoom={0.08} />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-all duration-300"></div>
                   </div>
                   <CardContent className="p-8 flex-grow flex flex-col min-h-[160px]">
@@ -683,6 +728,82 @@ export default function CaptainsBridge() {
         <TestimonialsMarquee />
       </ParallaxFixedSection>
 
+      {/* FAQ Section */}
+      <section className="py-32 bg-page-white">
+        <div className="container mx-auto px-4 page-inner">
+          <AnimatedSection>
+            <div className="text-center mb-20">
+              <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed body-premium text-dark-secondary">
+                Get answers to common questions about our maritime training programs and certifications
+              </p>
+              <div className="w-16 h-px mx-auto mt-10 divider-gold" />
+            </div>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              {[
+                {
+                  q: "What maritime courses does CAPTAINS BRIDGE offer?",
+                  a: "We offer comprehensive maritime training including BOSIET (Basic Offshore Safety Induction and Emergency Training), HUET (Helicopter Under-Water Escape Training), H2S Awareness training, cookery courses, and specialized value-added programs approved by DG Shipping and the Government of India."
+                },
+                {
+                  q: "Is CAPTAINS BRIDGE DG Shipping approved?",
+                  a: "Yes, CAPTAINS BRIDGE is a DG Shipping approved maritime training institute located in Kochi, Kerala. All our courses comply with international maritime standards and STCW requirements."
+                },
+                {
+                  q: "What are the admission requirements for merchant navy courses?",
+                  a: "Candidates should have completed 10+2 (Higher Secondary) education. Physical fitness and English proficiency are also important. We provide guidance for all necessary documentation and certification requirements."
+                },
+                {
+                  q: "Do you provide placement assistance after course completion?",
+                  a: "Yes, we provide 100% placement support through our dedicated Placement Guidance and Placement Cell. We connect our trained seafarers with shipping companies and maritime organizations globally."
+                },
+                {
+                  q: "What facilities are available for maritime training?",
+                  a: "We have state-of-the-art facilities including spacious classrooms, advanced computer labs with simulation training, food safety and HACCP training labs, modern accommodation, and experienced faculty comprising high-profile Captains and Chief Officers."
+                },
+                {
+                  q: "How long do maritime courses typically take?",
+                  a: "Course duration varies. Basic courses range from 10-30 days, while comprehensive programs like BSP (Basic Seafarers Package) may take several weeks. Check individual course pages for specific durations."
+                },
+              ].map((item, index) => (
+                <AnimatedSection key={index} delay={index * 50}>
+                  <div className="bg-white rounded-lg border border-light-color p-6 md:p-8 hover:shadow-md transition-shadow">
+                    <h3 className="text-lg md:text-xl font-bold mb-4 heading-premium text-primary-cyan">
+                      {item.q}
+                    </h3>
+                    <p className="text-base leading-relaxed text-dark-secondary body-premium">
+                      {item.a}
+                    </p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-lg body-premium text-dark-secondary mb-6">
+              Didn't find your answer?
+            </p>
+            <button
+              className="px-10 py-4 text-lg font-bold uppercase transition-all duration-300 rounded btn-primary"
+              onClick={() => {
+                const contactSection = document.getElementById('contact')
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-32 bg-page-white">
         <div className="container mx-auto px-4 page-inner">
@@ -714,7 +835,7 @@ export default function CaptainsBridge() {
                       <br />
                       Next to Anjali Marriage hall,
                       <br />
-                      Thoppumpady, Kochi, Kerala - 682005
+                      Thoppumpady, Kochi 682005
                     </p>
                   </div>
                 </div>
@@ -727,8 +848,7 @@ export default function CaptainsBridge() {
                     <h3 className="font-bold mb-3 uppercase text-base heading-premium text-accent-gold">
                       Phone
                     </h3>
-                    <p className="text-sm text-dark-secondary">Call: +91 484 2234500</p>
-                    <p className="text-sm text-dark-secondary">Mobile: +91 8484545501</p>
+                    <p className="text-sm text-dark-secondary">+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</p>
                   </div>
                 </div>
 
@@ -740,7 +860,7 @@ export default function CaptainsBridge() {
                     <h3 className="font-bold mb-3 uppercase text-base heading-premium text-accent-gold">
                       Email
                     </h3>
-                    <p className="text-sm text-dark-secondary">cochinmaritime@gmail.com</p>
+                    <p className="text-sm text-dark-secondary">snefindiaglobal@gmail.com</p>
                   </div>
                 </div>
 

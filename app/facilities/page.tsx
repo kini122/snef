@@ -39,8 +39,11 @@ export default function FacilitiesPage() {
       <section className="mx-auto max-w-7xl px-4 py-12 md:py-16 bg-page-white">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2 className="text-3xl font-black md:text-4xl mb-4 leading-tight heading-premium text-primary-cyan">
-            SNEF India Facilities
+            CAPTAINS BRIDGE Facilities
           </h2>
+          <h3 className="text-2xl font-semibold mb-6 heading-premium text-primary-cyan">
+            State-of-the-Art Maritime Training Infrastructure
+          </h3>
           <p className="text-base leading-relaxed md:text-lg body-premium">
             We are enriched with an outstanding faculty team, comprising of high profile and experienced Captains and Chief-Officers who are capable of providing excellent academic training in all our courses.
           </p>
@@ -50,7 +53,7 @@ export default function FacilitiesPage() {
           {facilities.map((f, i) => (
             <Card key={i} className="group overflow-hidden border-0 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
               <div className="h-48 w-full overflow-hidden">
-                <ParallaxImage src={f.image} alt={f.title} className="h-full w-full" intensity={0.12} zoom={0.06} />
+                <ParallaxImage src={f.image} alt={`${f.title} - Maritime training facility at CAPTAINS BRIDGE`} className="h-full w-full" intensity={0.12} zoom={0.06} />
               </div>
               <CardContent className="p-6 flex flex-col flex-grow min-h-[160px]">
                 <h3 className="mb-2 text-lg font-bold uppercase heading-premium text-primary-cyan break-words">

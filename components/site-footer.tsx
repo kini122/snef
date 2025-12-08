@@ -15,7 +15,7 @@ export default function SiteFooter() {
           {/* About Section */}
           <div className="space-y-4">
             <h3 className="text-base font-semibold uppercase tracking-wider heading-premium text-primary-cyan">
-              About SNEF INDIA
+              About CAPTAINS BRIDGE
             </h3>
             <p className="text-xs text-gray-700 leading-relaxed font-body">
               Located in Kochi, India, we offer comprehensive maritime education with modern facilities and experienced faculty across shipping, logistics, and marine disciplines.
@@ -25,13 +25,13 @@ export default function SiteFooter() {
           {/* Services Section */}
           <div className="space-y-4">
             <h3 className="text-base font-semibold uppercase tracking-wider heading-premium text-primary-cyan">
-              Services
+              Our Offerings
             </h3>
             <ul className="space-y-2 text-xs text-gray-700 font-body">
-              <li className="hover:text-gray-900 transition-colors duration-200">Accreditations / Approvals</li>
-              <li className="hover:text-gray-900 transition-colors duration-200">Advanced Computer Lab</li>
-              <li className="hover:text-gray-900 transition-colors duration-200">Placement Guidelines</li>
-              <li className="hover:text-gray-900 transition-colors duration-200">Partners & Supporting Organisations</li>
+              <li className="hover:text-gray-900 transition-colors duration-200"><a href="/certification" className="hover:text-primary-cyan">Maritime Certifications</a></li>
+              <li className="hover:text-gray-900 transition-colors duration-200"><a href="/courses" className="hover:text-primary-cyan">Training Courses</a></li>
+              <li className="hover:text-gray-900 transition-colors duration-200"><a href="/value-added-courses" className="hover:text-primary-cyan">Value-Added Programs</a></li>
+              <li className="hover:text-gray-900 transition-colors duration-200"><a href="/facilities" className="hover:text-primary-cyan">Training Facilities</a></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@ export default function SiteFooter() {
         {/* Footer Bottom */}
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <p className="text-xs text-gray-600 font-body uppercase tracking-wider">
-            © 2025 SNEF INDIA. All Rights Reserved
+            © 2025 CAPTAINS BRIDGE. All Rights Reserved
           </p>
 
           {/* Back to Top Button */}

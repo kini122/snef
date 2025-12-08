@@ -22,25 +22,53 @@ const offerings = [
 const testimonials = [
   {
     name: "T. Kishore Kumar",
-    role: "Deck Cadet",
-    course: "BSP (Basic Seafarers Package)",
-    year: "2024",
-    photo: "/professional-maritime-officer-portrait.jpg",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F353d96c8280a4e15a147cc57ec4f59d6?format=webp&width=800",
     quote: "I'm very happy to join this institute. The institute has all the facilities required as per the norms of DG Shipping...",
   },
   {
-    name: "Rahul Menon",
-    role: "Engine Officer",
-    course: "Marine Engineering Bridging",
-    year: "2023",
-    photo: "/male-officer.jpg",
-    quote: "Experienced faculty and practical training helped me excel at sea...",
+    name: "Muhammed Arshad",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Ff9c772aaa6bf48ad8ef0291fd1cab26b?format=webp&width=800",
+    quote: "Excellent maritime training institute in Kerala.",
+  },
+  {
+    name: "Justin Antony",
+    role: "",
+    course: "",
+    year: "",
+    photo: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Febb82e357ae74b00a0aeb7cda3f5709e?format=webp&width=800",
+    quote: "The institute has excellent facilities, Excellent faculty and all the facilities.",
   },
 ]
 
 export default function CertificationPage() {
   const [dialogOpen, setDialogOpen] = useState(false)
   const [dialogData, setDialogData] = useState<DetailDialogData | null>(null)
+
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://captainsbridge.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Certification",
+        "item": "https://captainsbridge.com/certification"
+      }
+    ]
+  }
 
   const openCertDetails = (cert: { title: string; image: string }) => {
     const description = `${cert.title} — Accreditation details, scope, and relevance to our curriculum. Learn how this certification ensures quality and recognition.`
@@ -58,6 +86,10 @@ export default function CertificationPage() {
 
   return (
     <div className="bg-page-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="relative w-full overflow-hidden bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F84749e18bca64bd7a57af62d04439b13%2F3cbfdedf70df4be68fabc1e93a892a1a)", minHeight: "456.5px", backgroundRepeat: "no-repeat" }}>
         <div className="h-[260px] w-full md:h-[360px] grid place-items-center relative z-10">
           <h1 className="text-center text-5xl font-black md:text-6xl leading-tight heading-premium text-white" style={{ marginTop: "59px" }}>
@@ -73,6 +105,9 @@ export default function CertificationPage() {
             <h2 className="text-3xl font-black md:text-4xl mb-2 leading-tight heading-premium text-primary-cyan">
               Our Certifications, Accreditations and Consultancy
             </h2>
+            <h3 className="text-2xl font-semibold mb-6 heading-premium text-primary-cyan">
+              Internationally Recognized Maritime Certifications
+            </h3>
             <p className="text-base leading-relaxed md:text-lg body-premium text-dark-secondary">
               Recognized by leading educational and maritime institutions worldwide
             </p>
@@ -84,7 +119,7 @@ export default function CertificationPage() {
                 <div className="h-32 w-full mb-4 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden">
                   <img
                     src={cert.image}
-                    alt={cert.title}
+                    alt={`${cert.title} - Maritime certification and accreditation`}
                     className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -150,23 +185,19 @@ export default function CertificationPage() {
 
               <div className="relative mb-4 overflow-hidden" />
 
-              <div className="relative overflow-hidden">
-                <div className="flex w-full">
-                  {testimonials.map((t, i) => (
-                    <div key={i} className="w-full shrink-0">
-                      <div className="flex items-start gap-4">
-                        <ParallaxImage src={t.photo} alt={t.name} className="h-16 w-16 rounded-full object-cover ring-2" intensity={0.06} zoom={0.04} />
-                        <div className="flex-1">
-                          <blockquote className="text-balance italic leading-relaxed text-white">"{t.quote}"</blockquote>
-                          <div className="mt-3 text-sm font-semibold text-white">
-                            {t.name} <span className="opacity-80 font-normal">— {t.role}</span>
-                          </div>
-                          <div className="text-xs text-white/80 mt-1">{t.course} • {t.year}</div>
-                        </div>
+              <div className="space-y-6">
+                {testimonials.map((t, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <ParallaxImage src={t.photo} alt={t.name} className="h-16 w-16 rounded-full object-cover ring-2 flex-shrink-0" intensity={0.06} zoom={0.04} />
+                    <div className="flex-1">
+                      <blockquote className="text-balance italic leading-relaxed text-white">"{t.quote}"</blockquote>
+                      <div className="mt-3 text-sm font-semibold text-white">
+                        {t.name} {t.role && <span className="opacity-80 font-normal">— {t.role}</span>}
                       </div>
+                      {(t.course || t.year) && <div className="text-xs text-white/80 mt-1">{t.course} {t.course && t.year && "•"} {t.year}</div>}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
 
             </CardContent>

@@ -13,40 +13,22 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "VIKRAM PATEL",
-    role: "Chief Engineer",
-    quote: "Outstanding faculty and world-class infrastructure. The institute prepared me exceptionally well for my career at sea.",
-    image: "/professional-maritime-officer-portrait.jpg",
+    name: "T. Kishore Kumar",
+    role: "Student",
+    quote: "I'm very happy to join this institute. The institute has all the facilities required as per the norms of DG Shipping.",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2F353d96c8280a4e15a147cc57ec4f59d6?format=webp&width=800",
   },
   {
-    name: "PRIYA DESHMUKH",
-    role: "Deck Officer",
-    quote: "The hands-on training and mentorship at Captains Bridge made all the difference in my professional development.",
-    image: "/female-maritime-officer-portrait.jpg",
+    name: "Muhammed Arshad",
+    role: "Student",
+    quote: "Excellent maritime training institute in Kerala.",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Ff9c772aaa6bf48ad8ef0291fd1cab26b?format=webp&width=800",
   },
   {
-    name: "ARJUN KUMAR",
-    role: "Cadet",
-    quote: "Best maritime academy in the region. The courses are comprehensive and the faculty is highly experienced.",
-    image: "/maritime-engineer-officer-portrait.jpg",
-  },
-  {
-    name: "SNEHA NAIR",
-    role: "Navigation Officer",
-    quote: "The combination of theoretical knowledge and practical training gave me the confidence to excel in the maritime industry.",
-    image: "/female-maritime-officer-portrait.jpg",
-  },
-  {
-    name: "RAJESH IYER",
-    role: "Engine Officer",
-    quote: "Captains Bridge's approach to maritime education is modern, industry-relevant, and truly world-class.",
-    image: "/maritime-engineer-officer-portrait.jpg",
-  },
-  {
-    name: "DIVYA SHARMA",
-    role: "First Officer",
-    quote: "The institute's focus on safety standards and international norms is commendable and sets it apart.",
-    image: "/professional-maritime-officer-portrait.jpg",
+    name: "Justin Antony",
+    role: "Student",
+    quote: "The institute has excellent facilities, Excellent faculty and all the facilities.",
+    image: "https://cdn.builder.io/api/v1/image/assets%2F2aea7158bf6b409ba9a64ab0f37870bb%2Febb82e357ae74b00a0aeb7cda3f5709e?format=webp&width=800",
   },
 ]
 

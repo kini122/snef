@@ -102,7 +102,7 @@ export default function CoursesPage() {
             const cardElement = (
               <Card className="overflow-hidden border-0 shadow-md transition hover:-translate-y-2 hover:shadow-xl group h-full flex flex-col" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                 <div className="h-40 w-full overflow-hidden">
-                  <ParallaxImage src={operation.image} alt={operation.category} className="h-full w-full" intensity={0.12} zoom={0.06} />
+                  <ParallaxImage src={operation.image} alt={`${operation.category} - Maritime business operations and services`} className="h-full w-full" intensity={0.12} zoom={0.06} />
                 </div>
                 <CardContent className="p-6 flex flex-col flex-grow">
                   <div className="flex items-start gap-3 mb-3">
