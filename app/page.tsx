@@ -266,15 +266,18 @@ export default function CaptainsBridge() {
         <YouTubeHeroBackground videoSrc="https://cdn.builder.io/o/assets%2F9aed9e355eef433f905fdc33685caf52%2Fbf936fb889cb44438b1217b5daa6a76d?alt=media&token=d97ab75b-fbac-4318-ba19-2275c16c1484&apiKey=9aed9e355eef433f905fdc33685caf52" overlayOpacity={0.2} heightClass="min-h-[90vh]">
           <div className="hero-inner mx-auto max-w-[1320px] px-20 pt-20 pb-[21px] flex flex-col items-center lg:items-start justify-center relative min-h-[90vh]">
             <div className="max-w-3xl">
-              <TypingHeroTitle
-                texts={[
-                  "Welcome to CAPTAINS BRIDGE",
-                  "Top rated skill training center",
-                  "we train future technical engineers",
-                ]}
-                displayDuration={3000}
-                typingSpeed={50}
-              />
+              <div>
+                <h1 className="sr-only">CAPTAINS BRIDGE - Maritime Training Institute</h1>
+                <TypingHeroTitle
+                  texts={[
+                    "Welcome to CAPTAINS BRIDGE",
+                    "Top rated skill training center",
+                    "we train future technical engineers",
+                  ]}
+                  displayDuration={3000}
+                  typingSpeed={50}
+                />
+              </div>
               <div className="hero-cta mt-6 flex flex-col sm:flex-row gap-8 animate-in slide-in-from-bottom duration-800 delay-300">
                 <button
                   className="px-10 py-4 text-lg font-bold uppercase transition-all duration-300 rounded btn-primary"
@@ -324,6 +327,9 @@ export default function CaptainsBridge() {
               <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
                 Welcome to CAPTAINS BRIDGE
               </h2>
+              <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed body-premium text-dark-secondary mb-8">
+                Premier maritime training institute offering comprehensive merchant navy courses, DG Shipping approved certifications, and professional development for aspiring seafarers.
+              </p>
               <div className="w-16 h-px mx-auto divider-gold" />
             </div>
           </AnimatedSection>
@@ -400,8 +406,11 @@ export default function CaptainsBridge() {
           <AnimatedSection>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-black mb-8 leading-tight heading-premium text-primary-cyan">
-                CAPTAINS BRIDGE FACILITATIONS
+                CAPTAINS BRIDGE Training Programs
               </h2>
+              <h3 className="text-2xl md:text-3xl font-semibold mb-6 heading-premium text-primary-cyan">
+                Comprehensive Maritime Certification Courses
+              </h3>
               <div className="w-16 h-px mx-auto mb-10 divider-gold" />
               <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-medium body-premium">
                 Our offerings are wide-ranging and all-inclusive. We are adept in making available optimal solutions for residential, commercial and industrial verticals.
