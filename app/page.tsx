@@ -250,10 +250,6 @@ export default function CaptainsBridge() {
 
   return (
     <div className="min-h-screen bg-page-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       {/* Hero Section */}
       <section id="home" className="relative min-h-[90vh] flex items-center bg-page-white">
         <YouTubeHeroBackground videoSrc="https://cdn.builder.io/o/assets%2F9aed9e355eef433f905fdc33685caf52%2Fbf936fb889cb44438b1217b5daa6a76d?alt=media&token=d97ab75b-fbac-4318-ba19-2275c16c1484&apiKey=9aed9e355eef433f905fdc33685caf52" overlayOpacity={0.2} heightClass="min-h-[90vh]">
