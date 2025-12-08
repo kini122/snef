@@ -89,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets%2F1c8cba01cdd5428a9a23ba02da1cac9a%2Fc4b34970740e42598182e61d984d0d5c?format=webp&width=800" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
