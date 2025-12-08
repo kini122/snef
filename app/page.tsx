@@ -37,20 +37,6 @@ import ParallaxFixedSection from "@/components/parallax-fixed-section"
 import { RevealImageList } from "@/components/ui/reveal-images"
 import TypingHeroTitle from "@/components/typing-hero-title"
 
-export const metadata: Metadata = {
-  title: "CAPTAINS BRIDGE - Maritime Training & Shipping Courses in Kochi",
-  description: "World-class maritime training institute in Kochi offering merchant navy courses, DG Shipping approved certifications, and 100% placement support. 25+ years of excellence.",
-  keywords: "maritime training, merchant navy courses, shipping academy, BOSIET training, maritime certification, Kochi maritime institute, seafarer training, marine engineering",
-  openGraph: {
-    title: "CAPTAINS BRIDGE - Maritime Training Institute",
-    description: "Premier maritime training center offering comprehensive courses for aspiring merchant navy officers and seafarers.",
-    url: "https://captainsbridge.com",
-  },
-  alternates: {
-    canonical: "https://captainsbridge.com",
-  },
-}
-
 // Animation hook for scroll-triggered animations
 function useIntersectionObserver(options = {}) {
   const ref = useRef(null)
