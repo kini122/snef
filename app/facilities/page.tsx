@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from "next"
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"

@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from "next"
 import { Suspense, useState } from "react"
 import { Input } from "@/components/ui/input"
