@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "Premier maritime training institute in Kochi offering merchant navy certification courses, BOSIET, HUET, H2S, and placement assistance. DG Shipping approved training center.",
   keywords: "maritime training, merchant navy courses, BOSIET, H2S training, maritime academy Kochi, shipping courses, seafarer training",
   metadataBase: new URL("https://captainsbridge.com"),
+  alternates: {
+    canonical: "https://captainsbridge.com",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -24,11 +27,20 @@ export const metadata: Metadata = {
     title: "CAPTAINS BRIDGE - Maritime Training Institute in Kochi",
     description: "Premier maritime training institute offering DG Shipping approved courses and merchant navy certification.",
     siteName: "CAPTAINS BRIDGE",
+    images: [
+      {
+        url: "https://captainsbridge.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CAPTAINS BRIDGE Maritime Training Institute",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "CAPTAINS BRIDGE - Maritime Training Institute",
     description: "Professional maritime training and certification courses in Kochi, Kerala.",
+    creator: "@captainsbridge",
   },
   robots: {
     index: true,
