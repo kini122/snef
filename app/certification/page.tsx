@@ -158,23 +158,19 @@ export default function CertificationPage() {
 
               <div className="relative mb-4 overflow-hidden" />
 
-              <div className="relative overflow-hidden">
-                <div className="flex w-full">
-                  {testimonials.map((t, i) => (
-                    <div key={i} className="w-full shrink-0">
-                      <div className="flex items-start gap-4">
-                        <ParallaxImage src={t.photo} alt={t.name} className="h-16 w-16 rounded-full object-cover ring-2" intensity={0.06} zoom={0.04} />
-                        <div className="flex-1">
-                          <blockquote className="text-balance italic leading-relaxed text-white">"{t.quote}"</blockquote>
-                          <div className="mt-3 text-sm font-semibold text-white">
-                            {t.name} {t.role && <span className="opacity-80 font-normal">— {t.role}</span>}
-                          </div>
-                          {(t.course || t.year) && <div className="text-xs text-white/80 mt-1">{t.course} {t.course && t.year && "•"} {t.year}</div>}
-                        </div>
+              <div className="space-y-6">
+                {testimonials.map((t, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <ParallaxImage src={t.photo} alt={t.name} className="h-16 w-16 rounded-full object-cover ring-2 flex-shrink-0" intensity={0.06} zoom={0.04} />
+                    <div className="flex-1">
+                      <blockquote className="text-balance italic leading-relaxed text-white">"{t.quote}"</blockquote>
+                      <div className="mt-3 text-sm font-semibold text-white">
+                        {t.name} {t.role && <span className="opacity-80 font-normal">— {t.role}</span>}
                       </div>
+                      {(t.course || t.year) && <div className="text-xs text-white/80 mt-1">{t.course} {t.course && t.year && "•"} {t.year}</div>}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
 
             </CardContent>
