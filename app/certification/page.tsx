@@ -62,6 +62,26 @@ export default function CertificationPage() {
   const [dialogOpen, setDialogOpen] = useState(false)
   const [dialogData, setDialogData] = useState<DetailDialogData | null>(null)
 
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://captainsbridge.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Certification",
+        "item": "https://captainsbridge.com/certification"
+      }
+    ]
+  }
+
   const openCertDetails = (cert: { title: string; image: string }) => {
     const description = `${cert.title} — Accreditation details, scope, and relevance to our curriculum. Learn how this certification ensures quality and recognition.`
     const contactMessage = `Inquiry about certification: ${cert.title}. Please share authority, validity, and benefits.`
@@ -78,6 +98,10 @@ export default function CertificationPage() {
 
   return (
     <div className="bg-page-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="relative w-full overflow-hidden bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F84749e18bca64bd7a57af62d04439b13%2F3cbfdedf70df4be68fabc1e93a892a1a)", minHeight: "456.5px", backgroundRepeat: "no-repeat" }}>
         <div className="h-[260px] w-full md:h-[360px] grid place-items-center relative z-10">
           <h1 className="text-center text-5xl font-black md:text-6xl leading-tight heading-premium text-white" style={{ marginTop: "59px" }}>
