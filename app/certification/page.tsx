@@ -1,7 +1,19 @@
 "use client"
 
+import type { Metadata } from "next"
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
+
+export const metadata: Metadata = {
+  title: "Maritime Certifications & Accreditations - CAPTAINS BRIDGE",
+  description: "DG Shipping approved maritime institute with international certifications, accreditations from American Board of Education, STED Council, and ISO 21001 certification.",
+  keywords: "maritime certification, DG Shipping approved, maritime accreditation, ISO 21001, merchant navy certification, marine training certification, Kochi maritime institute",
+  openGraph: {
+    title: "Maritime Certifications & Accreditations",
+    description: "Internationally recognized maritime certifications and training approvals for seafarer professional development.",
+    url: "https://captainsbridge.com/certification",
+  },
+}
 import ParallaxImage from "@/components/parallax-image"
 import DetailDialog, { type DetailDialogData } from "@/components/detail-dialog"
 import { ChevronLeft, ChevronRight } from "lucide-react"
