@@ -74,7 +74,7 @@ export default function RootLayout({
       addressCountry: "IN",
     },
     telephone: ["+91-6238730195", "+91-9400937300", "+91-9495145500", "+91-0484-4851500"],
-    email: "snefindiaglobal@gmail.com",
+    email: ["snefindiaglobal@gmail.com", "captainsbridge24@gmail.com"],
     foundingYear: 2000,
     sameAs: ["https://www.facebook.com/captainsbridge", "https://twitter.com/captainsbridge", "https://linkedin.com/company/captains-bridge"],
     aggregateRating: {
