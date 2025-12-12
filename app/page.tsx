@@ -750,6 +750,7 @@ export default function CaptainsBridge() {
                       Email
                     </h3>
                     <p className="text-sm text-dark-secondary">snefindiaglobal@gmail.com</p>
+                    <p className="text-sm text-dark-secondary">captainsbridge24@gmail.com</p>
                   </div>
                 </div>
 
