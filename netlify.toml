@@ -1,0 +1,11 @@
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build]
+  command = "next build"
+  publish = ".next"
+
+[dev]
+  framework = "next"
+  command = "next dev"
+  port = 3000

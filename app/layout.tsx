@@ -12,7 +12,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CAPTAINS BRIDGE - Maritime Training Institute in Kochi | Merchant Navy Courses",
+  title: "CAPTAINS BRIDGE - PORTS",
   description:
     "Premier maritime training institute in Kochi offering merchant navy certification courses, BOSIET, HUET, H2S, and placement assistance. DG Shipping approved training center.",
   keywords: "maritime training, merchant navy courses, BOSIET, H2S training, maritime academy Kochi, shipping courses, seafarer training",
@@ -74,7 +74,7 @@ export default function RootLayout({
       addressCountry: "IN",
     },
     telephone: ["+91-6238730195", "+91-9400937300", "+91-9495145500", "+91-0484-4851500"],
-    email: "snefindiaglobal@gmail.com",
+    email: ["snefindiaglobal@gmail.com", "captainsbridge24@gmail.com"],
     foundingYear: 2000,
     sameAs: ["https://www.facebook.com/captainsbridge", "https://twitter.com/captainsbridge", "https://linkedin.com/company/captains-bridge"],
     aggregateRating: {
@@ -87,8 +87,9 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets%2F1c8cba01cdd5428a9a23ba02da1cac9a%2Fc4b34970740e42598182e61d984d0d5c?format=webp&width=800" type="image/webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

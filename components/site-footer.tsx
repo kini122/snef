@@ -51,8 +51,8 @@ export default function SiteFooter() {
                 <span>+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</span>
               </li>
               <li className="flex items-center gap-3 hover:text-gray-900 transition-colors duration-200">
-                <Mail size={16} className="text-primary-cyan" />
-                <a href="mailto:cochinmaritime@gmail.com">snefindiaglobal@gmail.com</a>
+                <Mail size={16} className="text-primary-cyan flex-shrink-0" />
+                <span><a href="mailto:snefindiaglobal@gmail.com">snefindiaglobal@gmail.com</a> | <a href="mailto:captainsbridge24@gmail.com">captainsbridge24@gmail.com</a></span>
               </li>
             </ul>
           </div>

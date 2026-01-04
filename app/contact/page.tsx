@@ -75,9 +75,14 @@ function ContactClient() {
               <Phone className="flex-shrink-0 text-primary-cyan" />
               <span>+91 6238730195 | +91 9400937300 | +91 9495145500 | 0484 485 1500 | +91 484 2234500</span>
             </div>
-            <div className="flex items-center gap-3">
-              <Mail className="flex-shrink-0 text-primary-cyan" />
-              <p>snefindiaglobal@gmail.com</p>
+            <div className="flex items-start gap-3 flex-col">
+              <div className="flex items-center gap-3">
+                <Mail className="flex-shrink-0 text-primary-cyan" />
+                <p>snefindiaglobal@gmail.com</p>
+              </div>
+              <div className="flex items-center gap-3 ml-7">
+                <p>captainsbridge24@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
